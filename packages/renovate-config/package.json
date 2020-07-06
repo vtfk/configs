@@ -26,42 +26,29 @@
   "renovate-config": {
     "default": {
       "description": "Default Renovate config for VTFK",
-      "extends": [
-        "config:base"
-      ],
+      "extends": ["config:base"],
       "separateMultipleMajor": true,
       "separateMinorPatch": true,
       "ignoreUnstable": true,
       "timezone": "Europe/Oslo",
       "assigneesFromCodeOwners": true,
       "assigneesSampleSize": 1,
-      "labels": [
-        "dependencies"
-      ],
+      "labels": ["dependencies"],
       "vulnerabilityAlerts": {
-        "labels": [
-          "security"
-        ]
+        "labels": ["security"]
       },
       "commitBody": "Dependency update (patch)",
       "packageRules": [
         {
-          "updateTypes": [
-            "patch",
-            "pin",
-            "digest"
-          ],
+          "updateTypes": ["patch", "pin", "digest"],
           "automerge": true
         },
         {
-          "depTypeList": [
-            "devDependencies",
-            "peerDependencies",
-            "optionalDependencies"
-          ],
+          "depTypeList": ["devDependencies", "peerDependencies", "optionalDependencies"],
           "automerge": true
         }
-      ]
+      ],
+      "requiredStatusChecks": null
     }
   },
   "gitHead": "820c1e2c22d9483681773fc6d83cc7156c8faadb"
