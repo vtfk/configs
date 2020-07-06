@@ -30,6 +30,7 @@
         "config:base"
       ],
       "separateMultipleMajor": true,
+      "separateMinorPatch": true,
       "ignoreUnstable": true,
       "timezone": "Europe/Oslo",
       "assigneesFromCodeOwners": true,
@@ -42,21 +43,17 @@
           "security"
         ]
       },
-
       "commitBody": "Dependency update (patch)",
-
-      "patch": {
-        "automerge": true
-      },
-      "pin": {
-        "automerge": true
-      },
-      "digest": {
-        "automerge": true
-      },
-      "devDependencies": {
-        "automerge": true
-      }
+      "packageRules": [
+        {
+          "updateTypes": ["patch", "pin", "digest"],
+          "automerge": true
+        },
+        {
+          "depTypeList": ["devDependencies"],
+          "automerge": true
+        }
+      ]
     }
   },
   "gitHead": "820c1e2c22d9483681773fc6d83cc7156c8faadb"
