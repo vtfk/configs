@@ -9,8 +9,10 @@
       "allowBranch": "master",
       "conventionalCommits": true,
       "exact": true,
-      "ignoreChanges": ["ignored-file", "**/__tests__/**", "**/*.md"],
-      "message": "Release %s (ignore)"
+      "ignoreChanges": ["ignored-file", "**/__tests__/**", "**/*.md"]
+    },
+    "version": {
+      "message": "Publish %s (ignore)"
     }
   }
 }
