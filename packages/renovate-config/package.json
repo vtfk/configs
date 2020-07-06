@@ -1,6 +1,6 @@
 {
   "name": "@vtfk/renovate-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Renovate config for VTFK projects",
   "keywords": [
     "renovate",
@@ -26,25 +26,39 @@
   "renovate-config": {
     "default": {
       "description": "Default Renovate config for VTFK",
-      "extends": ["config:base"],
+      "extends": [
+        "config:base"
+      ],
       "separateMultipleMajor": true,
       "separateMinorPatch": true,
       "ignoreUnstable": true,
       "timezone": "Europe/Oslo",
       "assigneesFromCodeOwners": true,
       "assigneesSampleSize": 1,
-      "labels": ["dependencies"],
+      "labels": [
+        "dependencies"
+      ],
       "vulnerabilityAlerts": {
-        "labels": ["security"]
+        "labels": [
+          "security"
+        ]
       },
       "commitBody": "Dependency update (patch)",
       "packageRules": [
         {
-          "updateTypes": ["patch", "pin", "digest"],
+          "updateTypes": [
+            "patch",
+            "pin",
+            "digest"
+          ],
           "automerge": true
         },
         {
-          "depTypeList": ["devDependencies", "peerDependencies", "optionalDependencies"],
+          "depTypeList": [
+            "devDependencies",
+            "peerDependencies",
+            "optionalDependencies"
+          ],
           "automerge": true
         }
       ],
