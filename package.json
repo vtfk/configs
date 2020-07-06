@@ -1,0 +1,21 @@
+{
+  "name": "configs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtfk/configs.git"
+  },
+  "keywords": [],
+  "author": "Mats Andreassen <mats.andreassen@vtfk.no> (https://github.com/matsand)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vtfk/configs/issues"
+  },
+  "homepage": "https://github.com/vtfk/configs#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

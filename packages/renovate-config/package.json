@@ -1,0 +1,58 @@
+{
+  "name": "@vtfk/renovate-config",
+  "version": "0.1.0",
+  "description": "Renovate config for VTFK projects",
+  "keywords": [
+    "renovate",
+    "vtfk"
+  ],
+  "author": "Mats Andreassen <matsand@live.no>",
+  "homepage": "https://github.com/vtfk/configs/tree/master/packages/renovate-config#readme",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run validate",
+    "validate": "renovate-config-validator"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtfk/configs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vtfk/configs/issues"
+  },
+  "devDependencies": {
+    "renovate": "21.23.2"
+  },
+  "renovate-config": {
+    "default": {
+      "description": "Default Renovate config for VTFK",
+      "extends": ["config:base"],
+      "separateMultipleMajor": true,
+      "ignoreUnstable": true,
+
+      "timezone": "Europe/Oslo",
+
+      "assigneesFromCodeOwners": true,
+      "assigneesSampleSize": 1,
+
+      "labels": ["dependencies"],
+      "vulnerabilityAlerts": {
+        "labels": ["security"]
+      },
+
+      "commitBody": "(patch)",
+
+      "packageRules": [
+        {
+          "updateTypes": ["patch", "pin", "digest"],
+          "automerge": true
+        },
+        {
+          "depTypeList": ["devDependencies"],
+          "automerge": true
+        }
+      ]    
+    }
+  }
+}

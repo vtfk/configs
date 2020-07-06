@@ -1,0 +1,16 @@
+{
+  "version": "independent",
+  "npmClient": "npm",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "exact": true,
+      "ignoreChanges": ["ignored-file", "**/__tests__/**", "**/*.md"],
+      "message": "Release %s (ignore)"
+    }
+  }
+}
