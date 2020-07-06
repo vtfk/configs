@@ -55,7 +55,9 @@
         },
         {
           "depTypeList": [
-            "devDependencies"
+            "devDependencies",
+            "peerDependencies",
+            "optionalDependencies"
           ],
           "automerge": true
         }
