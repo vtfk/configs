@@ -1,6 +1,6 @@
 {
   "name": "@vtfk/renovate-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Renovate config for VTFK projects",
   "keywords": [
     "renovate",
@@ -13,7 +13,6 @@
     "test": "npm run validate",
     "validate": "renovate-config-validator"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vtfk/configs.git"
@@ -27,32 +26,39 @@
   "renovate-config": {
     "default": {
       "description": "Default Renovate config for VTFK",
-      "extends": ["config:base"],
+      "extends": [
+        "config:base"
+      ],
       "separateMultipleMajor": true,
       "ignoreUnstable": true,
-
       "timezone": "Europe/Oslo",
-
       "assigneesFromCodeOwners": true,
       "assigneesSampleSize": 1,
-
-      "labels": ["dependencies"],
+      "labels": [
+        "dependencies"
+      ],
       "vulnerabilityAlerts": {
-        "labels": ["security"]
+        "labels": [
+          "security"
+        ]
       },
-
       "commitBody": "(patch)",
-
       "packageRules": [
         {
-          "updateTypes": ["patch", "pin", "digest"],
+          "updateTypes": [
+            "patch",
+            "pin",
+            "digest"
+          ],
           "automerge": true
         },
         {
-          "depTypeList": ["devDependencies"],
+          "depTypeList": [
+            "devDependencies"
+          ],
           "automerge": true
         }
-      ]    
+      ]
     }
   }
 }
