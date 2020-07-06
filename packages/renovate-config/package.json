@@ -1,6 +1,6 @@
 {
   "name": "@vtfk/renovate-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Renovate config for VTFK projects",
   "keywords": [
     "renovate",
@@ -46,11 +46,17 @@
       "commitBody": "Dependency update (patch)",
       "packageRules": [
         {
-          "updateTypes": ["patch", "pin", "digest"],
+          "updateTypes": [
+            "patch",
+            "pin",
+            "digest"
+          ],
           "automerge": true
         },
         {
-          "depTypeList": ["devDependencies"],
+          "depTypeList": [
+            "devDependencies"
+          ],
           "automerge": true
         }
       ]
