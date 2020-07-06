@@ -21,7 +21,7 @@
     "url": "https://github.com/vtfk/configs/issues"
   },
   "devDependencies": {
-    "renovate": "21.23.2"
+    "renovate": "21.23.4"
   },
   "renovate-config": {
     "default": {
