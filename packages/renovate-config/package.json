@@ -1,6 +1,6 @@
 {
   "name": "@vtfk/renovate-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Renovate config for VTFK projects",
   "keywords": [
     "renovate",
