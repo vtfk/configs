@@ -61,8 +61,7 @@
           ],
           "automerge": true
         }
-      ],
-      "requiredStatusChecks": null
+      ]
     }
   },
   "gitHead": "820c1e2c22d9483681773fc6d83cc7156c8faadb"
