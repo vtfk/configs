@@ -21,7 +21,7 @@
     "url": "https://github.com/vtfk/configs/issues"
   },
   "devDependencies": {
-    "renovate": "23.72.0"
+    "renovate": "24.48.0"
   },
   "renovate-config": {
     "default": {
@@ -35,6 +35,7 @@
       "timezone": "Europe/Oslo",
       "assigneesFromCodeOwners": true,
       "assigneesSampleSize": 1,
+      "stabilityDays": 2,
       "labels": [
         "dependencies"
       ],
