@@ -27,7 +27,8 @@
     "default": {
       "description": "Default Renovate config for VTFK",
       "extends": [
-        "config:base"
+        "config:base",
+        ":disableDependencyDashboard"
       ],
       "separateMultipleMajor": true,
       "separateMinorPatch": true,
