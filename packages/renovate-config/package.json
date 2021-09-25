@@ -48,22 +48,23 @@
       "commitBody": "Dependency update (patch)",
       "packageRules": [
         {
-          "updateTypes": [
+          "automerge": true,
+          "matchUpdateTypes": [
             "patch",
             "pin",
             "digest"
-          ],
-          "automerge": true
+          ]
         },
         {
-          "depTypeList": [
+          "automerge": true,
+          "matchDepTypes": [
             "devDependencies",
             "peerDependencies",
             "optionalDependencies"
-          ],
-          "automerge": true
+          ]
         }
-      ]
+      ],
+      "dependencyDashboard": false
     }
   },
   "gitHead": "820c1e2c22d9483681773fc6d83cc7156c8faadb"
